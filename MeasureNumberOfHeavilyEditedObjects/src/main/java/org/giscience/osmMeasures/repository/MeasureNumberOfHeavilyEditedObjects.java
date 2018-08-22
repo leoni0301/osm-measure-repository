@@ -34,9 +34,9 @@ public class MeasureNumberOfHeavilyEditedObjects extends MeasureOSHDB<Number, OS
         // EXAMPLE ONLY - PLEASE INSERT CODE HERE
         return Cast.result(mapReducer
                 .osmType(OSMType.WAY)
-                .osmTag("highway", "motorway")
+                .osmTag("highway", "residential")
                 .osmEntityFilter( entity -> entity.getVersion() >= 15)
-                .map(OSMEntitySnapshot::getEntity)
+                //.map(OSMEntitySnapshot::getEntity)
                 .count());
 
         // EXAMPLE END
