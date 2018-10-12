@@ -7,6 +7,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>MeasureNumberOfHeavilyEditedObjects</module>
+        <module>MeasureNumberOfSeniorMappers</module>
     </modules>
     <dependencies>
         <dependency>
