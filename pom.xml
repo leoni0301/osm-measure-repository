@@ -8,6 +8,7 @@
     <modules>
         <module>MeasureNumberOfHeavilyEditedObjects</module>
         <module>MeasureNumberOfSeniorMappers</module>
+        <module>MeasureNumberOfTags</module>
     </modules>
     <dependencies>
         <dependency>
