@@ -38,6 +38,7 @@ public class MeasureNumberOfTags extends MeasureOSHDB<Number, OSMEntitySnapshot>
         return Cast.result(mapReducer
                 .osmType(OSMType.WAY)
                 .map(osmEntitySnapshot -> {
+                    try {
                     Integer osmTagCount = 0;
                     Iterable<OSHDBTag> iterableOsmTag = osmEntitySnapshot.getEntity().getTags();
                     Iterator<OSHDBTag> iter = iterableOsmTag.iterator();
@@ -46,6 +47,8 @@ public class MeasureNumberOfTags extends MeasureOSHDB<Number, OSMEntitySnapshot>
                         osmTagCount += 1;
                         }
                         return osmTagCount;
+                } catch (Exception e) {}
+                    return 0;
                 })
                 .sum());
         // EXAMPLE END
