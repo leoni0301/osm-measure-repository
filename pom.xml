@@ -10,6 +10,7 @@
         <module>MeasureNumberOfSeniorMappers</module>
         <module>MeasureNumberOfTags</module>
         <module>MeasureAverageNumberOfContributorsOnHeavilyEditedObjects</module>
+        <module>MeasureAverageTimespanOfHeavilyEditedObjects</module>
     </modules>
     <dependencies>
         <dependency>
